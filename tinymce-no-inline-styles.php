@@ -2,7 +2,7 @@
 /**
  * Plugin Name: TinyMCE No inline styles
  * Description: This plugin prevents tinyMCE from adding inline styles to your html. It adds classes instead giving you full control.
- * Version: 0.1.2
+ * Version: 0.1.3
  * Author: Oliver Weißbarth
  * Author URI: http://oweissbarth.de
  */
@@ -79,8 +79,10 @@ function tnis_add_fronend_styles(){
 add_action('wp_enqueue_scripts', 'tnis_add_fronend_styles');
 
 
-require("plugin-update-checker/plugin-update-checker.php");
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-    'http://plugins.tastytorus.de/tinymce-no-inline-styles.json',
-    __FILE__
+require 'plugin-update-checker/plugin-update-checker.php';
+$className = PucFactory::getLatestClassVersion('PucGitHubChecker');
+$myUpdateChecker = new $className(
+    'https://github.com/oweissbarth/tinymce-no-inline-styles/',
+    __FILE__,
+    'master'
 );
