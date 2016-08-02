@@ -1,0 +1,69 @@
+p.alignleft,
+h1.alignleft,
+h2.alignleft,
+h3.alignleft,
+h4.alignleft,
+h5.alignleft,
+h6.alignleft,
+td.alignleft,
+th.alignleft,
+div.alignleft,
+ul.alignleft,
+ol.alignleft,
+li.alignleft{
+	text-align: left;
+	float: none;
+}
+
+p.aligncenter,
+h1.aligncenter,
+h2.aligncenter,
+h3.aligncenter,
+h4.aligncenter,
+h5.aligncenter,
+h6.aligncenter,
+td.aligncenter,
+th.aligncenter,
+div.aligncenter,
+ul.aligncenter,
+ol.aligncenter,
+li.aligncenter{
+	text-align: center;
+}
+
+p.alignright,
+h1.alignright,
+h2.alignright,
+h3.alignright,
+h4.alignright,
+h5.alignright,
+h6.alignright,
+td.alignright,
+th.alignright,
+div.alignright,
+ul.alignright,
+ol.alignright,
+li.alignright{
+	text-align: right;
+	float: none;
+}
+
+img.alignleft,
+table.alignleft,
+dl.wp-caption.alignleft{
+	float:left;
+}
+
+img.aligncenter,
+table.aligncenter,
+dl.wp-caption.aligncenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright,
+table.alignright,
+dl.wp-caption.alignright{
+	float:right;
+}
